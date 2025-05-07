@@ -36,7 +36,7 @@ const LeftBanner = () => {
             cursorColor="#ff014f"
           />
         </h2>
-        <p className="text-base font-bodyFont leading-6 tracking-wide">
+        <p className="text-base font-bodyFont leading-6 tracking-wide text-justify">
           I am a MERN Stack Developer with over a year of experience, I specialize in building responsive, scalable web
           applications. My expertise spans across frontend and backend development, API integration, and converting complex
           designs into clean, functional code. My experiences in hackathons and collaborative environments have honed my
