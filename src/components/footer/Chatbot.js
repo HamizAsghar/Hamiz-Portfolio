@@ -10,7 +10,7 @@ const responseMap = {
   cost: "Pricing depends on the project. Get a custom quote by sharing your needs!",
   charge: "Pricing depends on the project. Get a custom quote by sharing your needs!",
   contact: "You can contact us at hamizasghar@gmail.com or via WhatsApp at +923190218951",
-  portfolio: "You can view our portfolio here: https://zeshi-the-brand.vercel.app/",
+  portfolio: "You can view our portfolio here: https://hamiz-portfolio.vercel.app/",
   help: "I'm here to assist you! Ask about services, prices, portfolio, or timelines.",
   support: "I'm here to assist you! Ask about services, prices, portfolio, or timelines.",
   timeline: "Most basic websites are delivered in 1–2 weeks. Complex apps may take 3–6 weeks.",
