@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Define theme-specific background and text colors */
+  :root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #333333;
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --border-color: #4b5563;
+  }
+  
+  /* Light Theme */
+  .light {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --border-color: #d1d5db;
+  }
+  
+  /* Blue Theme */
+  .blue {
+    --bg-primary: #1e3a8a;
+    --bg-secondary: #3b82f6;
+    --text-primary: #e5e7eb;
+    --text-secondary: #93c5fd;
+    --border-color: #60a5fa;
+  }
+  
+  /* Green Theme */
+  .green {
+    --bg-primary: #065f46;
+    --bg-secondary: #10b981;
+    --text-primary: #d1fae5;
+    --text-secondary: #6ee7b7;
+    --border-color: #34d399;
+  }
+  
+  /* Red Theme */
+  .red {
+    --bg-primary: #dc2626;
+    --bg-secondary: #f87171;
+    --text-primary: #fef2f2;
+    --text-secondary: #fca5a5;
+    --border-color: #f87171;
+  }
+  
+  /* Purple Theme */
+  .purple {
+    --bg-primary: #6b21a8;
+    --bg-secondary: #a78bfa;
+    --text-primary: #d4d7db;
+    --text-secondary: #e9d5ff;
+    --border-color: #a78bfa;
+  }
+  
+  /* Pink Theme */
+  .pink {
+    --bg-primary: #ec4899;
+    --bg-secondary: #f9a8d4;
+    --text-primary: #fbcfe8;
+    --text-secondary: #f9a8d4;
+    --border-color: #f472b6;
+  }
+  
+  /* Teal Theme */
+  .teal {
+    --bg-primary: #14b8a6;
+    --bg-secondary: #2dd4bf;
+    --text-primary: #f1f5f9;
+    --text-secondary: #d1fae5;
+    --border-color: #2dd4bf;
+  }
+  
+  /* Yellow Theme */
+  .yellow {
+    --bg-primary: #f59e0b;
+    --bg-secondary: #fbbf24;
+    --text-primary: #fef08a;
+    --text-secondary: #fbbf24;
+    --border-color: #facc15;
+  }
+  
+  /* Orange Theme */
+  .orange {
+    --bg-primary: #ea580c;
+    --bg-secondary: #fb923c;
+    --text-primary: #fef7f2;
+    --text-secondary: #ffedd5;
+    --border-color: #fb923c;
+  }
+  
+}  
+
+@layer components {
+  .bannerIcon {
+    @apply w-16 h-16 bg-[var(--bg-primary)] bg-opacity-25 text-[var(--text-primary)] text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
+  }
+
+  .resumeLi {
+    @apply w-full h-20 bg-[var(--bg-primary)] bg-opacity-25 text-xl text-[var(--text-secondary)] flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] border-[var(--border-color)] rounded-none;
+  }
+
+  .bgOpacity {
+    @apply bg-[var(--bg-primary)] bg-opacity-40;
+  }
+
+  .contactInput {
+    @apply w-full h-12 rounded-lg border-b-[1px] border-b-[var(--border-color)] bg-[var(--bg-primary)] text-[var(--text-primary)] px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300;
+  }
+
+  .contactTextArea {
+    @apply w-full rounded-lg border-b-[1px] border-b-[var(--border-color)] bg-[var(--bg-primary)] text-[var(--text-primary)] px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none;
+  }
+}
+
+.active {
+  @apply text-[var(--text-primary)];
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
